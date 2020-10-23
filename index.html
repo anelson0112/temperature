@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF8">
+        <meta charset="UTF-8">
         <title>Temperature Converter</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <h1>The Great Temperature Converter!</h1>
-        <h2>Enter your temperature and will be converted when you click the button</h2>
-        <form>
-            F<input type="number" id="fahrenheit" placeholder="Fahrenheit" value=""> 
-            C<input id="celsius" placeholder="Celsius" value="">
-            <!--K<input type="number" id="kelvin" placeholder="Kelvin" value="">-->
-            <input type="button" id="convert" value="Convert!">
-            <input type="button" id="clearForm" value="Clear">
-
-        </form>
-
-
+    <div class= "container">
+        <div class= "row">
+            <div class= "col">
+                <h1>The Great Temperature Converter!</h1>
+            </div>       
+        </div>
+    </div>
+        <div class= "row">
+            <div class= "col">
+            <h2>Enter your temperature and will be converted when you click the button</h2>
+        </div>
+    </div>
+    <form>
+        <div class="row"> 
+            <div class="col-md-4">   
+                <div class="form-group">
+                    <label>Fahrenheit</label>    
+                    <input type="number" id="fahrenheit" placeholder="Fahrenheit" value=""> 
+                </div>
+            </div>
+            <div class="col-md-4">   
+                <div class= "form-group">
+                    <label>Celsius</label>
+                    <input type="number" id="celsius" placeholder="Celsius" value="">
+                </div>
+            </div>
+            <div class="col-md-4">   
+                <div class= "form-group">
+                    <label>Kelvin</label>
+                    <input type="number" id="kelvin" placeholder="Kelvin" value="">
+                </div>
+            </div>
+        </div>    
+        <div class = "row">
+            <div class = "col">
+                    <input type="button" id="convert" value="Convert!">
+                    <input type="button" id="clearForm" value="Clear">
+                    
+            </div>
+        </div>
+    </form>
 
 
 
